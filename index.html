@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seynabou Kassé Koïta | Fondatrice &amp; CEO de Tam-Tamal</title>
+<meta name="description" content="Découvrez Seynabou Kassé Koïta, Fondatrice &amp; CEO de Tam-Tamal. Plus de 20 ans d'expérience dans le développement du leadership, le renforcement organisationnel et la gouvernance en Afrique de l'Ouest.">
+<meta name="keywords" content="leadership, développement du leadership, coaching, mentoring, renforcement organisationnel, gouvernance, transformation organisationnelle, excellence organisationnelle, Afrique de l'Ouest, Taxaw, Nafa, Impact 360, Tam-Tamal">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,500;1,600;1,700&family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1a1e5b;
+    --navy-deep:#12153f;
+    --orange:#e8622c;
+    --gold:#c99a4a;
+    --cream:#faf8f4;
+    --ink:#26264a;
+    --linkedin:#0a66c2;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Poppins',sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{max-width:100%;display:block;}
+  .wrap{max-width:560px;margin:0 auto;padding:0 28px;}
+
+  /* ---------- HEADER ---------- */
+  header.hero{
+    background:radial-gradient(120% 100% at 50% 0%, #23286f 0%, var(--navy) 55%, var(--navy-deep) 100%);
+    color:#fff;
+    padding:44px 28px 40px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+  }
+  .brandbar{
+    display:flex;align-items:center;justify-content:center;gap:10px;
+    margin-bottom:34px;
+  }
+  .brandbar svg{width:30px;height:30px;flex:none;}
+  .brandbar span{
+    font-weight:700;letter-spacing:2px;font-size:14px;color:#f1efff;
+  }
+  .hero .name{
+    font-size:34px;font-weight:900;letter-spacing:0.5px;line-height:1.15;
+    margin-bottom:10px;
+  }
+  .hero .role{
+    color:var(--gold);font-weight:700;font-size:15px;letter-spacing:1px;
+    text-transform:uppercase;margin-bottom:22px;
+  }
+  .hero .divider{width:56px;height:3px;background:var(--orange);margin:0 auto 22px;border-radius:2px;}
+  .hero .tagline{
+    font-family:'Playfair Display',serif;font-style:italic;font-weight:500;
+    font-size:19px;color:#f1efff;max-width:320px;margin:0 auto;
+  }
+
+  /* ---------- BONJOUR ---------- */
+  section.intro{padding:44px 0 8px;}
+  section.intro h2{
+    font-family:'Playfair Display',serif;font-style:italic;font-weight:600;
+    color:var(--navy);font-size:26px;margin-bottom:16px;
+  }
+  section.intro p{font-size:15.5px;color:#3d3d5c;margin-bottom:16px;}
+  section.intro p strong{color:var(--navy);}
+  .cta-line{
+    font-family:'Playfair Display',serif;font-style:italic;font-weight:600;
+    color:var(--orange);font-size:19px;margin:30px 0 6px;
+  }
+  .cta-rule{width:44px;height:2px;background:var(--gold);margin-bottom:26px;border-radius:2px;}
+
+  /* ---------- BUTTONS ---------- */
+  .buttons{display:flex;flex-direction:column;gap:12px;margin-bottom:12px;}
+  .btn{
+    display:flex;align-items:center;gap:14px;
+    padding:16px 18px;border-radius:12px;
+    text-decoration:none;color:#fff;
+    font-weight:600;font-size:15.5px;
+    border:none;width:100%;cursor:pointer;text-align:left;
+    font-family:'Poppins',sans-serif;
+    transition:transform .15s ease, box-shadow .15s ease;
+    box-shadow:0 4px 14px rgba(0,0,0,0.08);
+  }
+  .btn:active{transform:scale(0.98);}
+  .btn .ico{
+    width:38px;height:38px;flex:none;border-radius:9px;
+    background:rgba(255,255,255,0.18);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .btn .txt{display:flex;flex-direction:column;gap:2px;}
+  .btn .txt small{font-weight:400;opacity:0.85;font-size:12.5px;}
+  .btn.orange{background:var(--orange);}
+  .btn.navy{background:var(--navy);}
+  .btn.gold{background:linear-gradient(135deg,#c99a4a,#b5843a);}
+  .btn.linkedin{background:var(--linkedin);}
+
+  /* ---------- FORM (Demander un programme) ---------- */
+  #programme-form{
+    display:none;
+    background:#fff;border:1.5px solid #eee0c8;border-radius:14px;
+    padding:22px;margin:-2px 0 12px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.05);
+  }
+  #programme-form.open{display:block;}
+  #programme-form h3{font-size:16px;color:var(--navy);margin-bottom:4px;}
+  #programme-form p.hint{font-size:13px;color:#78788f;margin-bottom:16px;}
+  #programme-form label{display:block;font-size:13px;font-weight:600;color:var(--navy);margin-bottom:6px;}
+  #programme-form input,#programme-form select,#programme-form textarea{
+    width:100%;padding:11px 12px;border:1.5px solid #e4dfd2;border-radius:9px;
+    font-family:'Poppins',sans-serif;font-size:14.5px;margin-bottom:14px;color:var(--ink);
+    background:#fdfcfa;
+  }
+  #programme-form textarea{resize:vertical;min-height:70px;}
+  #programme-form button{
+    width:100%;padding:13px;border:none;border-radius:9px;
+    background:var(--orange);color:#fff;font-weight:700;font-size:14.5px;cursor:pointer;
+    font-family:'Poppins',sans-serif;
+  }
+  #programme-form .close-form{
+    display:block;text-align:center;font-size:12.5px;color:#9a9ab0;margin-top:10px;
+    cursor:pointer;background:none;border:none;font-family:'Poppins',sans-serif;
+  }
+  .confirm-msg{display:none;font-size:14px;color:#2f7a4f;background:#eaf6ee;border-radius:9px;padding:12px 14px;margin-top:10px;}
+
+  /* ---------- A PROPOS ---------- */
+  section.about{background:#fff;padding:48px 0 56px;margin-top:20px;}
+  section.about .wrap{max-width:560px;}
+  .about-eyebrow{
+    font-size:12.5px;font-weight:700;letter-spacing:2px;color:var(--orange);
+    text-transform:uppercase;margin-bottom:10px;
+  }
+  section.about h2{
+    color:var(--navy);font-size:24px;font-weight:900;margin-bottom:14px;
+  }
+  section.about > .wrap > p{font-size:15px;color:#4a4a68;margin-bottom:28px;}
+
+  .domain{
+    border-left:3px solid var(--orange);padding:4px 0 4px 18px;margin-bottom:26px;
+  }
+  .domain:nth-child(2n){border-left-color:var(--gold);}
+  .domain h3{color:var(--navy);font-size:17px;font-weight:700;margin-bottom:6px;}
+  .domain p{font-size:14.5px;color:#5a5a78;margin-bottom:10px;}
+  .domain .prog-label{font-size:11.5px;text-transform:uppercase;letter-spacing:1.2px;color:#9a9ab0;font-weight:700;margin-bottom:6px;}
+  .domain ul{list-style:none;}
+  .domain li{
+    font-size:14px;color:var(--navy);font-weight:600;padding:6px 0;
+    border-top:1px dashed #eee0c8;
+  }
+  .domain li:first-child{border-top:none;}
+  .domain li span{color:#6a6a86;font-weight:400;}
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    background:var(--navy-deep);color:#cfcfe6;text-align:center;
+    padding:38px 28px 30px;
+  }
+  footer .tagline{
+    font-family:'Playfair Display',serif;font-style:italic;font-weight:600;
+    color:var(--gold);font-size:17px;margin-bottom:16px;
+  }
+  footer .contact-line{font-size:13px;color:#a9a9c8;margin-bottom:4px;}
+  footer .contact-line a{color:#e4e4f5;text-decoration:none;}
+  footer .brand-mini{margin-top:18px;font-size:11px;letter-spacing:2px;color:#6d6d95;}
+
+  @media (min-width:600px){
+    .hero .name{font-size:40px;}
+    .buttons{gap:14px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="brandbar">
+    <svg viewBox="0 0 60 70" xmlns="http://www.w3.org/2000/svg">
+      <g stroke="#e8622c" stroke-width="4" fill="none" stroke-linecap="round">
+        <path d="M28,10 C18,-4 2,-6 -4,4 C-10,14 -2,26 10,28 C18,29.5 25,24 28,16 Z" transform="translate(6,20)"/>
+        <path d="M28,10 C18,-4 2,-6 -4,4 C-10,14 -2,26 10,28 C18,29.5 25,24 28,16 Z" transform="translate(54,20) scale(-1,1)"/>
+      </g>
+      <path d="M30,20 C33,32 33,46 30,58" stroke="#e8622c" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+    </svg>
+    <span>TAM&#8209;TAMAL</span>
+  </div>
+  <div class="name">Seynabou Kassé Koïta</div>
+  <div class="role">Fondatrice &amp; CEO</div>
+  <div class="divider"></div>
+  <p class="tagline">« Le leadership commence à l'intérieur. »</p>
+</header>
+
+<section class="intro">
+  <div class="wrap">
+    <h2>Bonjour,</h2>
+    <p>Bonjour et merci de votre visite.</p>
+    <p><strong>Je suis Seynabou Kassé Koïta, Fondatrice &amp; CEO de Tam-Tamal.</strong></p>
+    <p>Forte de près de 30 ans d'expérience professionnelle en Afrique de l'Ouest, j'ai évolué dans des fonctions de gestion de projets, de management, de développement organisationnel et de renforcement des capacités au sein d'organisations internationales, avant de mettre cette expertise au service de l'accompagnement et de la transformation.</p>
+    <p>Ce parcours m'a permis d'observer que la performance durable repose autant sur la qualité des systèmes et des processus que sur le développement des personnes qui les font vivre.</p>
+    <p>Ces dernières années, cette conviction s'est affinée pour devenir le fil conducteur de l'action de Tam-Tamal. Avec notre réseau d'experts partenaires, nous accompagnons les individus, les équipes et les organisations dans la transformation de leur potentiel en impact durable grâce à une approche qui relie leadership, développement humain et excellence organisationnelle.</p>
+
+    <p class="cta-line">Que pouvons-nous construire ensemble ?</p>
+    <div class="cta-rule"></div>
+
+    <div class="buttons">
+      <a class="btn orange" href="mailto:seynabou.kasse@tamtamal.com?subject=Demande%20de%20rendez-vous%20-%20Entretien%20d%C3%A9couverte%2030%20min">
+        <span class="ico">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+        </span>
+        <span class="txt">Prendre rendez-vous<small>Échange découverte de 30 minutes</small></span>
+      </a>
+
+      <a class="btn navy" href="seynabou-kasse-koita.vcf" download>
+        <span class="ico">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </span>
+        <span class="txt">Enregistrer mon contact<small>Ajoutez mes coordonnées à votre téléphone</small></span>
+      </a>
+
+      <button type="button" class="btn gold" onclick="toggleForm()">
+        <span class="ico">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15h6M9 11h3"/></svg>
+        </span>
+        <span class="txt">Demander un programme<small>Recevez le détail du parcours qui vous correspond</small></span>
+      </button>
+
+      <a class="btn linkedin" href="https://www.linkedin.com/in/seynabou-kasse-b2198841" target="_blank" rel="noopener">
+        <span class="ico">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56z"/></svg>
+        </span>
+        <span class="txt">LinkedIn<small>Restons connectés</small></span>
+      </a>
+    </div>
+
+    <form id="programme-form" action="https://formsubmit.co/seynabou.kasse@tamtamal.com" method="POST">
+      <h3>Demander un programme</h3>
+      <p class="hint">Dites-nous ce qui vous correspond — nous revenons vers vous personnellement.</p>
+
+      <input type="hidden" name="_subject" value="Nouvelle demande de programme — Tam-Tamal">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://tamtamal.com/seynabou#merci">
+
+      <label for="f-nom">Nom</label>
+      <input id="f-nom" type="text" name="Nom" required>
+
+      <label for="f-email">Email</label>
+      <input id="f-email" type="email" name="Email" required>
+
+      <label for="f-parcours">Parcours qui vous intéresse</label>
+      <select id="f-parcours" name="Parcours">
+        <option>Taxaw</option>
+        <option>Nafa</option>
+        <option>Impact 360°</option>
+        <option>Autre / Je ne sais pas encore</option>
+      </select>
+
+      <label for="f-message">Message (facultatif)</label>
+      <textarea id="f-message" name="Message"></textarea>
+
+      <button type="submit">Envoyer ma demande</button>
+      <button type="button" class="close-form" onclick="toggleForm()">Annuler</button>
+    </form>
+  </div>
+</section>
+
+<section class="about">
+  <div class="wrap">
+    <div class="about-eyebrow">À propos</div>
+    <h2>Tam-Tamal</h2>
+    <p>Tam-Tamal accompagne les individus, les équipes et les organisations dans leur développement à travers trois domaines d'intervention complémentaires :</p>
+
+    <div class="domain">
+      <h3>Leadership &amp; Transformation Humaine</h3>
+      <p>Développer le leadership, renforcer la posture et transformer le potentiel en impact.</p>
+      <div class="prog-label">Programmes signature</div>
+      <ul>
+        <li>Parcours Taxaw <span>— Jeunes professionnels</span></li>
+        <li>Parcours Nafa <span>— Femmes leaders</span></li>
+      </ul>
+    </div>
+
+    <div class="domain">
+      <h3>Renforcement Organisationnel</h3>
+      <p>Structurer la gouvernance, renforcer les processus et pérenniser la performance des organisations.</p>
+      <div class="prog-label">Programme signature</div>
+      <ul>
+        <li>Parcours Impact 360° <span>— Organisations à impact</span></li>
+      </ul>
+    </div>
+
+    <div class="domain">
+      <h3>Parcours &amp; Ateliers sur Mesure</h3>
+      <p>Des solutions adaptées aux besoins des individus, des équipes et des organisations.</p>
+      <div class="prog-label">Formats</div>
+      <ul>
+        <li>Coaching</li>
+        <li>Mentoring</li>
+        <li>Formation</li>
+        <li>Facilitation</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="tagline">Révéler. Aligner. Transformer.</div>
+  <div class="contact-line"><a href="mailto:seynabou.kasse@tamtamal.com">seynabou.kasse@tamtamal.com</a></div>
+  <div class="contact-line"><a href="https://tamtamal.com" target="_blank" rel="noopener">tamtamal.com</a></div>
+  <div class="brand-mini">TAM&#8209;TAMAL &middot; AU SERVICE DE L'HUMAIN</div>
+</footer>
+
+<script>
+  function toggleForm(){
+    var f = document.getElementById('programme-form');
+    f.classList.toggle('open');
+    if(f.classList.contains('open')){ f.scrollIntoView({behavior:'smooth', block:'center'}); }
+  }
+</script>
+
+</body>
+</html>
